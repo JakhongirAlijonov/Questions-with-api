@@ -10,30 +10,34 @@ async function requestApi(api) {
 requestApi(api);
 
 function getData(data) {
-  data && data.map(question=>{
-    
-document.querySelector('.questions-container').innerHTML +=`
-<div class="question">
-        <div class="time-number">
-          <p class="questionNumber">
-            Question: <span id="questionNumber">${question.id}</span>
-          </p>
-          <p class="time">Time left: <span id="questionTime">15:00</span></p>
-        </div>
-        <h2 class="question-title">${question.question}</h2>
-        <div class="answers">
-          <button class="answer1">${question.answer1.answer1}</button>
-          <button class="answer2">${question.answer2.answer2}</button>
-          <button class="answer3">${question.answer3.answer3}</button>
-          <button class="answer4">${question.answer4.answer4}</button>
-        </div>
-      </div>
-`
-
-
-  })
+  createQuestionCard(data)
 }
 getData();
 
 
+
+function createQuestionCard(data){
+  data && data.map(question=>{
+    
+    document.querySelector('.questions-container').innerHTML +=`
+    <div class="question">
+            <div class="time-number">
+              <p class="questionNumber">
+                Question: <span id="questionNumber">${question.id}</span>
+              </p>
+              <p class="time">Time left: <span id="questionTime">15:00</span></p>
+            </div>
+            <h2 class="question-title">${question.question}</h2>
+            <div class="answers">
+              <button class="answer1">${question.answer1.answer1}</button>
+              <button class="answer2">${question.answer2.answer2}</button>
+              <button class="answer3">${question.answer3.answer3}</button>
+              <button class="answer4">${question.answer4.answer4}</button>
+            </div>
+          </div>
+    `
+    
+    
+      })
+}
 
