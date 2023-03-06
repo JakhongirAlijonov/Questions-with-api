@@ -32,3 +32,16 @@
     flex-direction: column;
   }
 }
+
+
+.quest-header{
+  padding: 32px;
+  a{
+    background-color: #ccc;
+    padding: 16px;
+    border-radius: 16px;
+    color: $title-colors;
+    text-decoration: none;
+    
+  }
+}

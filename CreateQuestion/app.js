@@ -9,10 +9,10 @@ body: JSON.stringify({
 
     
     question:questBody.value,
-    answer1: { answer1: answer1.value , isTrue: 'true'},
-    answer2: { answer2: answer2.value , isTrue: 'false'},
-    answer3: { answer3: answer3.value , isTrue: 'false'},
-    answer4: { answer4: answer4.value , isTrue: 'false'},
+    answer1: { answer1: answer1.value , isTrue: radio1.checked},
+    answer2: { answer2: answer2.value , isTrue: radio2.checked},
+    answer3: { answer3: answer3.value , isTrue: radio3.checked},
+    answer4: { answer4: answer4.value , isTrue: radio4.checked},
 
 }),
 headers: {
@@ -23,6 +23,9 @@ headers: {
 return res.json()
 })
 .then(getData)
+
+createQuestForm.reset()
+
 })
 
 
@@ -38,4 +41,4 @@ console.log(data);
     
 
 
-// console.log(createQuestForm);
+

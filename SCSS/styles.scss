@@ -15,7 +15,9 @@ html {
 }
 body {
   height: 100%;
-
+  a{
+    text-decoration: none;
+  }
   p,
   a {
     font: {
@@ -69,3 +71,33 @@ margin-top: 80px;
     }
 }
 
+
+.create-header{
+  padding-block: 32px;
+  margin-bottom: 50px;
+  a{
+    padding: 16px;
+    background-color: #ccc;
+    border-radius: 16px;
+  }
+}
+
+
+#createQuestForm{
+  display: flex;
+width: 75%;
+  flex-direction: column;
+  #questBody{
+    height: 150px;
+    padding: 16px;
+    resize: none;
+  }
+  input , textarea{
+    margin-bottom: 30px;
+    padding: 16px;
+    border: none;
+    border-radius: 16px;
+    background-color: #ccc;
+    outline: none;
+  }
+}

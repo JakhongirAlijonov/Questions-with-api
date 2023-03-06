@@ -4,17 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Savol yaratish</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
 </head>
 <body>
+   <section class="container">
+    <div class="create-header">
+        <a href="../index.html">Asosiyga qaytish</a>
+    </div>
+
     <form action="" id="createQuestForm">
-        <input type="text" id="questBody">
-        <input type="text" id="answer1">
-        <input type="text" id="answer2">
-        <input type="text" id="answer3">
-        <input type="text" id="answer4">
-        <button type="submit">ADD</button>
+        <textarea type="text" id="questBody"  autocomplete="off" placeholder="Savolni kiriting..." required></textarea>
+        <input type="text" id="answer1" autocomplete="off" placeholder="birinchi javob...">
+        <div class="trueAnswer">
+            <label for="radio1">To'g'ri javob:</label> <input type="radio" name="isTrue" id="radio1">
+
+        </div>
+        <input type="text" id="answer2" autocomplete="off" placeholder="ikkinchi javob..." required>
+        <div class="trueAnswer">
+            <label for="radio2">To'g'ri javob:</label> <input type="radio" name="isTrue" id="radio2">
+
+        </div>
+        <input type="text" id="answer3" autocomplete="off" placeholder="uchinchi javob..." required>
+        <div class="trueAnswer">
+            <label for="radio3">To'g'ri javob:</label> <input type="radio" name="isTrue" id="radio3">
+
+        </div>
+        <input type="text" id="answer4" autocomplete="off" placeholder="to'rtinchi  javob..." required>
+        <div class="trueAnswer">
+            <label for="radio4">To'g'ri javob:</label> <input type="radio" name="isTrue" id="radio4">
+        </div>
+        <button type="submit">Qo'shish</button>
     </form>
+   </section>
 
     <script src="./app.js"></script>
 </body>

@@ -33,6 +33,17 @@
   flex-direction: column;
 }
 
+.quest-header {
+  padding: 32px;
+}
+.quest-header a {
+  background-color: #ccc;
+  padding: 16px;
+  border-radius: 16px;
+  color: #202124;
+  text-decoration: none;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -89,6 +100,9 @@ html {
 body {
   height: 100%;
 }
+body a {
+  text-decoration: none;
+}
 body p,
 body a {
   font-family: "Mulish", sans-serif;
@@ -135,6 +149,35 @@ h6 {
 }
 .hero-text h3 {
   color: #202124;
+}
+
+.create-header {
+  padding-block: 32px;
+  margin-bottom: 50px;
+}
+.create-header a {
+  padding: 16px;
+  background-color: #ccc;
+  border-radius: 16px;
+}
+
+#createQuestForm {
+  display: flex;
+  width: 75%;
+  flex-direction: column;
+}
+#createQuestForm #questBody {
+  height: 150px;
+  padding: 16px;
+  resize: none;
+}
+#createQuestForm input, #createQuestForm textarea {
+  margin-bottom: 30px;
+  padding: 16px;
+  border: none;
+  border-radius: 16px;
+  background-color: #ccc;
+  outline: none;
 }
 
 /*# sourceMappingURL=styles.css.map */
