@@ -1,0 +1,43 @@
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 30px;
+    .navbar {
+      display: flex;
+      align-items: center;
+      list-style-type: none;
+    }
+  }
+  .logo {
+    a {
+      text-decoration: none;
+      color: $title-colors;
+    }
+  }
+  
+  .navbar-item {
+    margin-left: 32px;
+    a {
+      text-decoration: none;
+      color: $text-colors;
+      padding-bottom: 10px;
+      border-bottom: 2px solid transparent;
+    }
+  }
+  .navbar-item:first-child{
+      margin-left: 0;
+  }
+  
+  .active {
+    border-bottom-color: $title-colors !important;
+    color: $title-colors !important;
+  }
+  .account-link {
+    color: $title-colors;
+    span {
+      font-size: 30px;
+    }
+  }
+  

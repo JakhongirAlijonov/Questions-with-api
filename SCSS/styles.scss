@@ -1,0 +1,71 @@
+$main-font-titles: "DM Sans", sans-serif;
+$second-font-texts: "Mulish", sans-serif;
+$text-colors: #747476;
+$title-colors: #202124;
+@import '_questions';
+@import  '__header' ;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+
+  p,
+  a {
+    font: {
+      family: $second-font-texts;
+      size: 18px;
+      weight: 400;
+    }
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font: {
+    family: $main-font-titles;
+    size: 36px;
+    weight: 700;
+  }
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 150px;
+}
+
+.hero {
+  // background-color: #d2d4db;
+margin-top: 80px;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    img{
+        width: 50%;
+    }
+}
+.hero-text {
+    width: 50%;
+  p{
+    color: $text-colors;
+  }
+    h3{
+        color: $title-colors;
+
+    }
+}
+

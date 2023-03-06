@@ -1,0 +1,140 @@
+.questions-container {
+  margin-top: 50px;
+}
+.questions-container .time-number {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.question {
+  padding: 32px;
+  border-radius: 10px;
+  background-color: #ccc;
+  width: 100%;
+}
+.question button {
+  padding: 16px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.question button:hover {
+  opacity: 0.5;
+}
+.question .answers {
+  margin-top: 50px;
+  display: flex;
+  text-align-last: left;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 30px;
+}
+header .navbar {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #202124;
+}
+
+.navbar-item {
+  margin-left: 32px;
+}
+.navbar-item a {
+  text-decoration: none;
+  color: #747476;
+  padding-bottom: 10px;
+  border-bottom: 2px solid transparent;
+}
+
+.navbar-item:first-child {
+  margin-left: 0;
+}
+
+.active {
+  border-bottom-color: #202124 !important;
+  color: #202124 !important;
+}
+
+.account-link {
+  color: #202124;
+}
+.account-link span {
+  font-size: 30px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+body p,
+body a {
+  font-family: "Mulish", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 150px;
+}
+
+.hero {
+  margin-top: 80px;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero-content img {
+  width: 50%;
+}
+
+.hero-text {
+  width: 50%;
+}
+.hero-text p {
+  color: #747476;
+}
+.hero-text h3 {
+  color: #202124;
+}
+
+/*# sourceMappingURL=styles.css.map */

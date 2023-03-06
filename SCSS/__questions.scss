@@ -1,0 +1,34 @@
+.questions-container {
+  margin-top: 50px;
+  .time-number {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+}
+
+.question {
+  padding: 32px;
+  border-radius: 10px;
+  background-color: #ccc;
+  width: 100%;
+  button {
+    padding: 16px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  button:hover {
+    opacity: 0.5;
+  }
+  .answers {
+    margin-top: 50px;
+    display: flex;
+    text-align-last: left;
+    flex-direction: column;
+  }
+}
