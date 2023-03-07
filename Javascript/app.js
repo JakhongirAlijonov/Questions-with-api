@@ -8,18 +8,29 @@ async function requestApi(api) {
 }
 
 requestApi(api);
-
+let questConuter = 0
 function getData(data) {
-  createQuestionCard(data)
-}
-getData();
+  
+  
+  document.querySelector('#startBtn').addEventListener('click', ()=>{
+    createQuestionCard(data)
 
+  })
+
+document.querySelector('.nextQuest').addEventListener('click', e=>{
+  questConuter++
+  
+  createQuestionCard(data)
+  
+  
+})
+}
 
 
 function createQuestionCard(data){
-  data && data.map(question=>{
-    
-    document.querySelector('.questions-container').innerHTML +=`
+  if (data[questConuter]){
+   let question = data[questConuter]
+    document.querySelector('.questions-container').innerHTML =`
     <div class="question">
             <div class="time-number">
               <p class="questionNumber">
@@ -29,15 +40,17 @@ function createQuestionCard(data){
             </div>
             <h2 class="question-title">${question.question}</h2>
             <div class="answers">
-              <button class="answer1">${question.answer1.answer1}</button>
+              <button class="answer1" required>${question.answer1.answer1}</button>
               <button class="answer2">${question.answer2.answer2}</button>
               <button class="answer3">${question.answer3.answer3}</button>
               <button class="answer4">${question.answer4.answer4}</button>
             </div>
           </div>
-    `
+          `
+  }
+  else{
+    console.log('Savollar tugadi')
+  }
     
-    
-      })
 }
 
