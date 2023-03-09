@@ -11,10 +11,13 @@ requestApi(api);
 let questConuter = 0
 function getData(data) {
   
+  document.querySelector('#questLength').innerHTML = data.length
   
   document.querySelector('#startBtn').addEventListener('click', ()=>{
     createQuestionCard(data)
-
+    timeCalc()
+    document.querySelector('.nextQuest').classList.remove('none')
+    document.querySelector('.startText').classList.add('none')
   })
 
 document.querySelector('.nextQuest').addEventListener('click', e=>{
@@ -36,7 +39,7 @@ function createQuestionCard(data){
               <p class="questionNumber">
                 Question: <span id="questionNumber">${question.id}</span>
               </p>
-              <p class="time">Time left: <span id="questionTime">15:00</span></p>
+             
             </div>
             <h2 class="question-title">${question.question}</h2>
             <div class="answers">
@@ -54,3 +57,24 @@ function createQuestionCard(data){
     
 }
 
+
+function timeCalc(){
+  let minutes = 14
+  let seconds = 60
+  let timeShow = document.querySelector('#questionTime')
+
+ let timeInterval = setInterval(()=>{
+    seconds--
+    timeShow.innerHTML = `${minutes < 10 ? '0' + minutes : minutes} : ${seconds < 10 ? '0' + seconds : seconds}`
+    if(seconds <= 0){
+      minutes--
+      seconds = 60
+    }
+  } , 1000)
+
+  if(minutes == '00' ){
+    clearInterval(timeInterval)
+    alert('Vaqtingiz tugadi')
+  }
+
+}

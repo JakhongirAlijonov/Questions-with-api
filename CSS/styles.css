@@ -171,7 +171,8 @@ h6 {
   padding: 16px;
   resize: none;
 }
-#createQuestForm input, #createQuestForm textarea {
+#createQuestForm input,
+#createQuestForm textarea {
   margin-bottom: 30px;
   padding: 16px;
   border: none;
@@ -190,6 +191,35 @@ h6 {
 
 .question {
   margin-bottom: 20px;
+}
+
+.quest-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.startBtn, .nextQuest {
+  padding: 16px;
+  border-radius: 16px;
+  border: none;
+  cursor: pointer;
+  background-color: #ccc;
+  margin-bottom: 20px;
+  display: inline-block;
+  width: 200px;
+}
+
+.startText {
+  padding: 16px;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+  width: 80%;
+}
+
+.none {
+  display: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

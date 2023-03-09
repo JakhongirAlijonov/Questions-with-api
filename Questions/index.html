@@ -21,13 +21,20 @@
   </head>
   <body>
     <div class="container quest-header">
-    <a href="../index.html">Asosiyga qaytish</a>      
+    <div><a href="../index.html">Asosiyga qaytish</a></div>
+    <p class="time">Qolgan vaqt: <span id="questionTime"> <span id="minutes">15</span> : <span id="seconds">00</span> </span></p>      
     </div>
-    <button id="startBtn">Boshlash</button>
+    <div class="container startText">
+      <h3>Assalomu alaykum! Test topshirig'iga hush kelibsiz bu test <span id="questLength">0</span> ta savollardan tashkil topgan yakunlash uchun 15 daqiqa vaqtingiz bor. Omad !</h3>
+      <button class=" startBtn" id="startBtn">Boshlash</button>
+    </div>
     <div class="container questions-container">
       
     </div>
-    <button class="nextQuest">Keyingi savol</button>
+    <div class="container">
+    <button class="nextQuest none">Keyingi savol</button>
+
+    </div>
     <script src="../Javascript/app.js"></script>
   </body>
 </html>

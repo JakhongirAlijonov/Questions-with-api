@@ -2,8 +2,8 @@ $main-font-titles: "DM Sans", sans-serif;
 $second-font-texts: "Mulish", sans-serif;
 $text-colors: #747476;
 $title-colors: #202124;
-@import '_questions';
-@import  '__header' ;
+@import "_questions";
+@import "__header";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -15,7 +15,7 @@ html {
 }
 body {
   height: 100%;
-  a{
+  a {
     text-decoration: none;
   }
   p,
@@ -49,50 +49,48 @@ h6 {
 
 .hero {
   // background-color: #d2d4db;
-margin-top: 80px;
+  margin-top: 80px;
 }
 
 .hero-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    img{
-        width: 50%;
-    }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  img {
+    width: 50%;
+  }
 }
 .hero-text {
-    width: 50%;
-  p{
+  width: 50%;
+  p {
     color: $text-colors;
   }
-    h3{
-        color: $title-colors;
-
-    }
+  h3 {
+    color: $title-colors;
+  }
 }
 
-
-.create-header{
+.create-header {
   padding-block: 32px;
   margin-bottom: 50px;
-  a{
+  a {
     padding: 16px;
     background-color: #ccc;
     border-radius: 16px;
   }
 }
 
-
-#createQuestForm{
+#createQuestForm {
   display: flex;
-width: 75%;
+  width: 75%;
   flex-direction: column;
-  #questBody{
+  #questBody {
     height: 150px;
     padding: 16px;
     resize: none;
   }
-  input , textarea{
+  input,
+  textarea {
     margin-bottom: 30px;
     padding: 16px;
     border: none;
@@ -100,7 +98,7 @@ width: 75%;
     background-color: #ccc;
     outline: none;
   }
-  button{
+  button {
     padding: 16px;
     border-radius: 16px;
     border: none;
@@ -110,7 +108,39 @@ width: 75%;
   }
 }
 
-
-.question{
+.question {
   margin-bottom: 20px;
+}
+
+.quest-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+.startBtn , .nextQuest{
+  padding: 16px;
+  border-radius: 16px;
+  border: none;
+  cursor: pointer;
+  background-color: #ccc;
+  margin-bottom: 20px;
+  display: inline-block;
+  width: 200px;
+
+}
+
+
+.startText{
+  padding: 16px;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+  width: 80%;
+}
+
+.none{
+  display: none;
 }
