@@ -28,8 +28,22 @@
       <h3>Assalomu alaykum! Test topshirig'iga hush kelibsiz bu test <span id="questLength">0</span> ta savollardan tashkil topgan yakunlash uchun 15 daqiqa vaqtingiz bor. Omad !</h3>
       <button class=" startBtn" id="startBtn">Boshlash</button>
     </div>
-    <div class="container questions-container">
-      
+    <div class="container questions-container none">
+      <div class="question">
+        <div class="time-number">
+          <p class="questionNumber">
+            Question: <span id="questionNumber">${question.id}</span>
+          </p>
+         
+        </div>
+        <h2 class="question-title">${question.question}</h2>
+        <div class="answers" id="answers">
+          <button class="answer1 button" >${question.answer1.answer1}</button>
+          <button class="answer2 button" >${question.answer2.answer2}</button>
+          <button class="answer3 button" >${question.answer3.answer3}</button>
+          <button class="answer4 button" >${question.answer4.answer4}</button>
+        </div>
+      </div>
     </div>
     <div class="container">
     <button class="nextQuest none">Keyingi savol</button>
